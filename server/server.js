@@ -7,6 +7,8 @@ app.use(cors({origin: 'http://localhost:3000', credentials: true}))
 app.use(express.json())
 app.use(cookieParser())
 const {SERVER_PORT} = process.env
+const path = require('path')
+app.use(express.static(path.join(__dirname, "client/build")));
 
 const {
     seedUsers,

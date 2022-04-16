@@ -6,7 +6,8 @@ require('dotenv').config()
 app.use(cors({origin: 'http://localhost:3000', credentials: true}))
 app.use(express.json())
 app.use(cookieParser())
-const {SERVER_PORT} = process.env
+//const {SERVER_PORT} = process.env
+const port = process.env.SERVER_PORT || 5000;
 const path = require('path')
 app.use(express.static(path.join(__dirname, 'build')));
 
@@ -40,4 +41,4 @@ app.post("/api/newuser", newUser)
 
 app.post("/api/cart", checkoutClick)
 
-app.listen(SERVER_PORT, () => {console.log(`Server started on port ${SERVER_PORT}`)})
+app.listen(port, () => {console.log(`Server started on port ${port}`)})

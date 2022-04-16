@@ -27,11 +27,6 @@ const Login = () => {
         .post("http://localhost:5000/api/login", inputFields)
         .then((res) => {
           alert(res.data);
-          axios
-            .get("http://localhost:5000", { withCredentials: true })
-            .then((Cres) => {
-              console.log("cookie made");
-            });
         })
         .catch(() => alert("Password and username do not match"));
     }

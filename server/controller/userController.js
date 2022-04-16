@@ -73,13 +73,5 @@ module.exports = {
     //     res.sendStatus(200);
     //   })
     //   .catch((err) => console.log("error seeding user DB", err));
-  },
-  setCookie: (req,res) => {
-    res.status(202).cookie('Name', 'Alex Baranoff', {
-        sameSite: 'strict',
-        path: '/',
-        expires: new Date(new Date().getTime() + 20 * 1000),
-        httpOnly: true,
-    }).send("Cookie being made")
-}
+  }
 };

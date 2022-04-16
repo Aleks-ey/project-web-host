@@ -11,8 +11,7 @@ const {SERVER_PORT} = process.env
 const {
     seedUsers,
     newUser,
-    login,
-    setCookie
+    login
 } = require("./controller/userController")
 const {
     getItems,
@@ -24,7 +23,6 @@ const {
     checkoutClick
 } = require("./controller/cartController")
 
-app.get("/", setCookie)
 app.get("/api/items", getItems)
 app.get("/api/orders", getAllOrders)
 app.post("/api/login", login)

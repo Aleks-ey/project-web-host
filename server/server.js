@@ -9,11 +9,12 @@ app.use(cookieParser())
 //const {SERVER_PORT} = process.env
 const port = process.env.SERVER_PORT || 5000;
 const path = require('path')
-app.use(express.static(path.join(__dirname, 'build')));
 
-app.get('/', function (req,res) {
-    res.sendFile(path.join(__dirname, 'build', 'index.html'));
-});
+app.get(express.static(path.join(__dirname, '../public/index.html')));
+
+// app.get('/', function (req,res) {
+//     res.sendFile(path.join(__dirname, 'build', 'index.html'));
+// });
 
 const {
     seedUsers,
@@ -41,4 +42,4 @@ app.post("/api/newuser", newUser)
 
 app.post("/api/cart", checkoutClick)
 
-app.listen(port, () => {console.log(`Server started on port ${port}`)})
+app.listen(port, '0.0.0.0', () => {console.log(`Server started on port ${port}`)})

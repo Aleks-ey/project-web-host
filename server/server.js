@@ -7,7 +7,7 @@ app.use(cors({origin: 'http://localhost:3000', credentials: true}))
 app.use(express.json())
 app.use(cookieParser())
 //const {SERVER_PORT} = process.env
-const port = process.env.SERVER_PORT || 5000;
+const port = process.env.PORT || 5000;
 const path = require('path')
 
 app.get(express.static(path.join(__dirname, '../public/index.html')));

@@ -8,7 +8,7 @@ import Checkout from "../../Checkout/Checkout";
 const Item = () => {
   const [items, setItems] = useState([]);
   React.useEffect(() => {
-    axios.get('http://localhost:5000/api/items').then((res) => {
+    axios.get('/api/items').then((res) => {
       // console.log(res.data)
       // //setItems(res.data[0])
       for(let i = 0; i < res.data[0].length; i++){

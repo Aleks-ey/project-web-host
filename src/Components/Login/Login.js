@@ -24,7 +24,7 @@ const Login = () => {
     if (notEmpty) {
       //console.log(inputFields);
       axios
-        .post("http://localhost:5000/api/login", inputFields)
+        .post("/api/login", inputFields)
         .then((res) => {
           alert(res.data);
         })

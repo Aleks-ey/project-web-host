@@ -36,7 +36,7 @@ const Checkout = ({ items }) => {
         to="/checkout"
         id="checkoutBtn"
         onClick={() => {
-          axios.post('http://localhost:5000/api/cart', handleCart())
+          axios.post('/api/cart', handleCart())
           .then((res) => console.log(res.data))
           .catch((err) => console.log(err))
         }}

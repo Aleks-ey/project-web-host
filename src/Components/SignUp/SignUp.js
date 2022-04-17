@@ -32,7 +32,7 @@ const SignUp = () => {
         }
         if(match && notEmpty){
             axios
-            .post('http://localhost:5000/api/newuser', inputFields)
+            .post('/api/newuser', inputFields)
             .then((res) => console.log(res.data))
             .catch((err) => console.log(err))
         }

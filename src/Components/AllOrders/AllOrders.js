@@ -4,7 +4,7 @@ const AllOrders = () => {
   const [allOrders, setAllOrders] = useState([]);
   React.useEffect(() => {
     axios
-      .get('http://localhost:5000/api/orders')
+      .get('/api/orders')
       .then((res) => {
         console.log(res.data[0]);
         setAllOrders(res.data[0]);

@@ -8,6 +8,7 @@ import Login from "./Pages/loginPage/Login";
 import CheckoutPage from "./Pages/checkoutPage/Checkout";
 import ContactPage from "./Pages/ContactPage/ContactPage";
 import SignUpPage from "./Pages/signUpPage/SignUpPage";
+import Footer from "./Components/Footer/Footer";
 function App() {
   return (
     <Router>

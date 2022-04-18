@@ -1,0 +1,26 @@
+#about_main{
+    min-height: 100vh;
+}
+
+/* #about_image_container{
+} */
+
+#inside_church_id{
+    display: block;
+    margin: auto;
+    width: 80%;
+    height: 400px;
+    margin-bottom: 10px;
+}
+
+#text_div{
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    margin-top: 10px;
+}
+
+#p1{
+    text-align: center;
+    margin-bottom: 10px;
+}

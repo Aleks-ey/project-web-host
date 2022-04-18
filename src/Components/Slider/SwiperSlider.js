@@ -40,8 +40,16 @@ const SwiperSlider = () => {
         <div className="slide-image">
           <img src={image1} alt="image1"></img>
         </div>
-        <div className='overSlide noSwiping'>
+        <div className='overSlide_left noSwiping'>
+          <p className='item_name'>Big Kulich</p>
+          <p className='item_description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           <div id='shop-btn'><Link to="/shop" id='shop-link'>Shop All</Link></div>
+        </div>
+        <div className='overSlide_right'>
+          <img id="kulich" src="https://www.wikihow.com/images/3/3a/Make-Russian-Kulich-Bread-Final.jpg" alt=""/>
+        </div>
+        <div className='overSlide noSwiping'>
+
         </div>
       </SwiperSlide>
 
@@ -49,8 +57,13 @@ const SwiperSlider = () => {
         <div className="slide-image">
           <img src={image2} alt="image2"></img>
         </div>
-        <div className='overSlide noSwiping'>
+        <div className='overSlide_left noSwiping'>
+          <p className='item_name'>Pasha</p>
+          <p className='item_description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           <div id='shop-btn'><Link to="/shop" id='shop-link'>Shop All</Link></div>
+        </div>
+        <div className='overSlide_right'>
+          <img id="pasha" src="https://i2.wp.com/russianmomcooks.com/wp-content/uploads/2013/03/Paskha_WM-2.jpg" alt=""/>
         </div>
       </SwiperSlide>
 
@@ -58,8 +71,13 @@ const SwiperSlider = () => {
         <div className="slide-image">
           <img src={image3} alt="image3"></img>
         </div>
-        <div className='overSlide noSwiping'>
+        <div className='overSlide_left noSwiping'>
+          <p className='item_name'>Basket</p>
+          <p className='item_description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           <div id='shop-btn'><Link to="/shop" id='shop-link'>Shop All</Link></div>
+        </div>
+        <div className='overSlide_right'>
+          <img id="basket" src="https://fthmb.tqn.com/pqTVxlyyceB5kSH_L7WPnegS98o=/425x326/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-512788366-583ee5033df78c6f6a5d796a.jpg" alt=""/>
         </div>
       </SwiperSlide>
     </Swiper>

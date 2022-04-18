@@ -36,16 +36,51 @@
   z-index: 1;
 }
 
-.overSlide {
+.overSlide_left {
   position: absolute;
   z-index: 2;
+  padding-bottom: 50px;
+  padding-right: 420px;
+  margin: auto;
+  width: 50%;
 }
+
+.item_name{
+  margin-bottom: 20px;
+}
+
+.item_description{
+  margin-bottom: 20px;
+}
+
 #shop-btn{
   background-color: blue;
-  width: calc(100% + 10px);
+  width: 100px;
   border-radius: 20px;
-  
+  margin: auto;
 }
 #shop-link{
   color: black;
+}
+
+.overSlide_right{
+  position: absolute;
+  z-index: 2;
+  margin-bottom: 35px;
+  margin-left: 450px;
+}
+
+#kulich{
+  width: 250px;
+  height: 250px;
+}
+
+#pasha{
+  width: 250px;
+  height: 250px;
+}
+
+#basket{
+  width: 250px;
+  height: 250px;
 }
